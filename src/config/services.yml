@@ -1,0 +1,4 @@
+services:
+    aes_encrypter:
+        class: Tebru\AesEncryption\AesEncrypter
+        arguments: [%secret%]

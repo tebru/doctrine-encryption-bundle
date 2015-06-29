@@ -1,0 +1,21 @@
+{
+    "name": "tebru/doctrine-encryption-bundle",
+    "description": "Adds an encryption type for Doctrine entities",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nate Brunette",
+            "email": "n@tebru.net"
+        }
+    ],
+    "require": {
+        "symfony/symfony": "~2.3",
+        "doctrine/doctrine-bundle": "~1.4",
+        "tebru/aes-encryption": "^0.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tebru\\DoctrineEncryptionBundle\\": "src/"
+        }
+    }
+}
