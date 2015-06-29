@@ -9,6 +9,7 @@
         }
     ],
     "require": {
+        "php": ">=5.4",
         "symfony/symfony": "~2.3",
         "doctrine/doctrine-bundle": "~1.4",
         "tebru/aes-encryption": "^0.2.0"
