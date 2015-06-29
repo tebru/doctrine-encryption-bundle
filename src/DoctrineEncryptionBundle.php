@@ -4,7 +4,7 @@
  * Distributed under the MIT License (http://opensource.org/licenses/MIT)
  */
 
-namespace DoctrineEncryptionBundle;
+namespace Tebru\DoctrineEncryptionBundle;
 
 use Doctrine\DBAL\Types\Type;
 use Tebru\DoctrineEncryptionBundle\Type\Encrypted;

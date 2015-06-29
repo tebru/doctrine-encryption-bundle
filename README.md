@@ -6,6 +6,10 @@ encrypts and decrypts values in the database.
 
     composer require tebru/doctrine-encryption-bundle
     
+Add to AppKernel
+
+    new Tebru\DoctrineEncryptionBundle\DoctrineEncryptionBundle(),
+    
 ## Usage
 Set the column annotation type to `encrypted` on your entity property
 
