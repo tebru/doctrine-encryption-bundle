@@ -37,6 +37,10 @@ class Encrypted extends Type
      */
     public function convertToPHPValue($value, AbstractPlatform $platform)
     {
+        if (null === $value) {
+            return null;
+        }
+
         return $this->getEncrypter()->decrypt($value);
     }
 
@@ -49,6 +53,10 @@ class Encrypted extends Type
      */
     public function convertToDatabaseValue($value, AbstractPlatform $platform)
     {
+        if (null === $value) {
+            return null;
+        }
+
         return $this->getEncrypter()->encrypt($value);
     }
 
