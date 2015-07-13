@@ -34,6 +34,8 @@ class DoctrineEncryptionBundle extends Bundle
         $encryptedType->setEncrypter($this->container->get('aes_encrypter'));
 
         $entityManager = $this->container->get('doctrine.orm.entity_manager');
-        $entityManager->getConnection()->getDatabasePlatform()->registerDoctrineTypeMapping(Encrypted::NAME, Encrypted::NAME);
+        $platform = $entityManager->getConnection()->getDatabasePlatform();
+        $platform->registerDoctrineTypeMapping(Encrypted::NAME, Encrypted::NAME);
+        $platform->markDoctrineTypeCommented(Encrypted::NAME);
     }
 }
