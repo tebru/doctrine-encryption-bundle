@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a2f33b4a3bb79bec64dc9924f2439e4a",
+    "hash": "f43478224e2c0ca0efc3ab5ce9b59a04",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -849,16 +849,16 @@
         },
         {
             "name": "tebru/aes-encryption",
-            "version": "v0.2.0",
+            "version": "v0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tebru/aes-encryption.git",
-                "reference": "58252a4883cec7fdbf3fb90fa95a9dd16dbb48cc"
+                "reference": "e1ab08a5da94bba6285162f1a851e05237db3764"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tebru/aes-encryption/zipball/58252a4883cec7fdbf3fb90fa95a9dd16dbb48cc",
-                "reference": "58252a4883cec7fdbf3fb90fa95a9dd16dbb48cc",
+                "url": "https://api.github.com/repos/tebru/aes-encryption/zipball/e1ab08a5da94bba6285162f1a851e05237db3764",
+                "reference": "e1ab08a5da94bba6285162f1a851e05237db3764",
                 "shasum": ""
             },
             "require": {
@@ -867,10 +867,14 @@
                 "tebru/assert": "~0.1"
             },
             "require-dev": {
+                "ext-openssl": "*",
                 "mockery/mockery": "0.9.*",
                 "php": ">=5.5",
                 "phpunit/phpunit": "~4.6",
                 "satooshi/php-coveralls": "0.6.*"
+            },
+            "suggest": {
+                "ext-openssl": "A more secure encryption library"
             },
             "type": "library",
             "autoload": {
@@ -890,7 +894,7 @@
                 }
             ],
             "description": "An AES Encrypter for PHP",
-            "time": "2015-05-14 02:29:14"
+            "time": "2015-07-17 23:57:50"
         },
         {
             "name": "tebru/assert",
@@ -998,6 +1002,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=5.4"
+    },
     "platform-dev": []
 }
